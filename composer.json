@@ -1,0 +1,7 @@
+{
+	"require": {
+        "php": ">=5.4.3",
+		"dompdf/dompdf": "^0.7.0",
+		"cangelis/pdf": "^2.1"
+	}
+}

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Ano. #3004: Listings &gt; Mise en page  - Recette - OPAL</title>
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="FeTEAGQ+mdIbz+EHeOJr8LS9gHta+cwq5WeMoTiHdjA=" name="csrf-token" />
+<link rel='shortcut icon' href='/redmine/favicon.ico?1367421402' />
+<link href="/redmine/stylesheets/jquery/jquery-ui-1.9.2.css?1367421401" media="all" rel="stylesheet" type="text/css" />
+<link href="/redmine/stylesheets/application.css?1367421401" media="all" rel="stylesheet" type="text/css" />
+
+<script src="/redmine/javascripts/jquery-1.8.3-ui-1.9.2-ujs-2.0.3.js?1367421400" type="text/javascript"></script>
+<script src="/redmine/javascripts/application.js?1367421400" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('Cette page contient du texte non sauvegardé qui sera perdu si vous quittez la page.'); });
+//]]>
+</script>
+
+<link href="/redmine/plugin_assets/planner/stylesheets/planner.css?1374764960" media="screen" rel="stylesheet" type="text/css" /><script src="/redmine/plugin_assets/planner/javascripts/planner.js?1374764960" type="text/javascript"></script> <link href="/redmine/plugin_assets/clipboard_image_paste/stylesheets/jquery.Jcrop-0.9.10.min.css?1374766282" media="all" rel="stylesheet" type="text/css" />
+<link href="/redmine/plugin_assets/clipboard_image_paste/stylesheets/clipboard_image_paste.css?1374766282" media="all" rel="stylesheet" type="text/css" />
+<script src="/redmine/plugin_assets/clipboard_image_paste/javascripts/jcrop-0.9.10.min.js?1374766282" type="text/javascript"></script>
+<script src="/redmine/plugin_assets/clipboard_image_paste/javascripts/clipboard_image_paste.js?1374766282" type="text/javascript"></script>
+  <script type="text/javascript">
+    var j$cbp = $;
+  </script>
+
+<!-- page specific tags -->
+  	<script src="/redmine/plugin_assets/redmine_issue_checklist/javascripts/jquery.klass.js?1374764837" type="text/javascript"></script>
+		<script src="/redmine/plugin_assets/redmine_issue_checklist/javascripts/issue_checklist.jquery.js?1374764837" type="text/javascript"></script>
+	<link href="/redmine/plugin_assets/redmine_issue_checklist/stylesheets/issue_checklist.css?1374764837" media="screen" rel="stylesheet" type="text/css" />
+<script src="/redmine/javascripts/jstoolbar/jstoolbar-textile.min.js?1367421397" type="text/javascript"></script><script src="/redmine/javascripts/jstoolbar/lang/jstoolbar-fr.js?1367421396" type="text/javascript"></script><link href="/redmine/stylesheets/jstoolbar.css?1367421401" media="screen" rel="stylesheet" type="text/css" /><script type="text/javascript">
+//<![CDATA[
+var datepickerOptions={dateFormat: 'yy-mm-dd', firstDay: 1, showOn: 'button', buttonImageOnly: true, buttonImage: '/redmine/images/calendar.png?1367421395', showButtonPanel: true, showWeek: true, showOtherMonths: true, selectOtherMonths: true};
+//]]>
+</script><script src="/redmine/javascripts/i18n/jquery.ui.datepicker-fr.js?1367421396" type="text/javascript"></script>    <script src="/redmine/plugin_assets/redmine_issue_checklist/javascripts/jquery.klass.js?1374764837" type="text/javascript"></script>
+    <script src="/redmine/plugin_assets/redmine_issue_checklist/javascripts/issue_checklist.jquery.js?1374764837" type="text/javascript"></script>
+  <link href="/redmine/plugin_assets/redmine_issue_checklist/stylesheets/issue_checklist.css?1374764837" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/redmine/javascripts/attachments.js?1367421400" type="text/javascript"></script>
+    <link href="http://opal.sdv.amaury.local/redmine/issues/3004.atom?key=180424969f3961362251dd48f0729934dc6673d2" rel="alternate" title="Recette - Ano. #3004: Listings &gt; Mise en page " type="application/atom+xml" />
+<script src="/redmine/javascripts/context_menu.js?1367421400" type="text/javascript"></script><link href="/redmine/stylesheets/context_menu.css?1367421401" media="screen" rel="stylesheet" type="text/css" /></head>
+<body class="controller-issues action-show">
+<div id="wrapper">
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a href="/redmine/my/account" class="my-account">Mon compte</a></li>
+<li><a href="/redmine/logout" class="logout" data-method="post" rel="nofollow">Déconnexion</a></li></ul>    </div>
+    <div id="loggedas">Connecté en tant que <a href="/redmine/users/105" class="user active">TMA</a></div>
+    <ul><li><a href="/redmine/" class="home">Accueil</a></li>
+<li><a href="/redmine/my/page" class="my-page">Ma page</a></li>
+<li><a href="/redmine/projects" class="projects">Projets</a></li>
+<li><a href="/redmine/knowledgebase" class="knowledgebase">Base de Connaissance</a></li>
+<li><a href="/redmine/timesheet/index" class="timesheet">Feuille de temps</a></li>
+<li><a href="http://www.redmine.org/guide" class="help">Aide</a></li></ul></div>
+
+<div id="header">
+    <div id="quick-search">
+        <form accept-charset="UTF-8" action="/redmine/projects/recette/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <input name="issues" type="hidden" value="1" />
+        <label for='q'>
+          <a href="/redmine/projects/recette/search" accesskey="4">Recherche </a>:
+        </label>
+        <input accesskey="f" class="small" id="q" name="q" size="20" type="text" />
+</form>        <select id="project_quick_jump_box" name="project_quick_jump_box" onchange="if (this.value != &#x27;&#x27;) { window.location = this.value; }"><option value=''>Aller à un projet...</option><option value="" disabled="disabled">---</option><option value="/redmine/projects/evolution-mroad?jump=issues">Evolution MROAD</option><option selected="selected" value="/redmine/projects/recette?jump=issues">Recette</option><option value="/redmine/projects/mise-en-production?jump=issues">&nbsp;&nbsp;&#187; Mise en Production</option><option value="/redmine/projects/prosper2?jump=issues">PROSPER</option><option value="/redmine/projects/prosper_mco?jump=issues">&nbsp;&nbsp;&#187; PROSPER MCO</option><option value="/redmine/projects/edifco-lot-1?jump=issues">EDIFCO LOT 1</option></select>
+    </div>
+
+    <!--<h1>Recette</h1>-->
+	<img src="/redmine/images/Logo.jpg" style="top-margin: 50px; left-margin: 25px;"/>
+    <div id="main-menu">
+        <ul><li><a href="/redmine/projects/recette" class="overview">Aperçu</a></li>
+<li><a href="/redmine/projects/recette/activity" class="activity">Activité</a></li>
+<li><a href="/redmine/projects/recette/roadmap" class="roadmap">Roadmap</a></li>
+<li><a href="/redmine/projects/recette/issues" class="issues selected">Demandes</a></li>
+<li><a href="/redmine/projects/recette/issues/new" accesskey="7" class="new-issue">Nouvelle demande</a></li>
+<li><a href="/redmine/projects/recette/issues/gantt" class="gantt">Gantt</a></li>
+<li><a href="/redmine/projects/recette/news" class="news">Annonces</a></li>
+<li><a href="/redmine/projects/recette/documents" class="documents">Documents</a></li>
+<li><a href="/redmine/projects/recette/boards" class="boards">Forums</a></li>
+<li><a href="/redmine/projects/recette/files" class="files">Fichiers</a></li>
+<li><a href="/redmine/projects/recette/settings" class="settings">Configuration</a></li></ul>
+    </div>
+</div>
+
+<div id="main" class="">
+    <div id="sidebar">
+          <h3>Demandes</h3>
+<a href="/redmine/projects/recette/issues?set_filter=1">Voir toutes les demandes</a><br />
+<a href="/redmine/projects/recette/issues/report">Résumé</a><br />
+
+
+  <a href="/redmine/projects/recette/issues/gantt">Gantt</a><br />
+
+
+<h3>Rapports personnalisés</h3><a href="/redmine/projects/recette/issues?query_id=2" class="query">Avancement par Ressources du Projet </a><br /><a href="/redmine/projects/recette/issues?query_id=3" class="query">Suivi des délais 2</a>
+
+
+
+    <div id="watchers">
+      <div class="contextual">
+<a href="/redmine/watchers/new?object_id=3004&amp;object_type=issue" data-method="get" data-remote="true">Ajouter</a>
+</div>
+
+<h3>Observateurs (1)</h3>
+
+<ul class="watchers"><li class="user-72"><img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/f0a1214d8276c8783929715c8b8925b9?rating=PG&amp;size=16&amp;default=wavatar" ssl="false" title="" /><a href="/redmine/users/72" class="user active">Samia  DHEMAIED</a> <a href="/redmine/issues/3004/watchers/72" class="delete" data-method="delete" data-remote="true" rel="nofollow"><img alt="Delete" src="/redmine/images/delete.png?1367421395" /></a></li></ul>
+
+    </div>
+
+        
+    </div>
+
+    <div id="content">
+        
+        <div class="contextual">
+<a href="/redmine/issues/3004/edit" accesskey="e" class="icon icon-edit" onclick="showAndScrollTo(&quot;update&quot;, &quot;issue_notes&quot;); return false;">Mettre à jour</a>
+<a href="/redmine/issues/3004/time_entries/new" class="icon icon-time-add">Saisir temps</a>
+<a href="/redmine/watchers/watch?object_id=3004&amp;object_type=issue" class="issue-3004-watcher icon icon-fav-off" data-method="post" data-remote="true" rel="nofollow">Surveiller</a>
+<a href="/redmine/projects/recette/issues/3004/copy" class="icon icon-copy">Copier</a>
+<a href="/redmine/issues/3004" class="icon icon-del" data-confirm="Êtes-vous sûr de vouloir supprimer la ou les demandes(s) selectionnée(s) ?" data-method="delete" rel="nofollow">Supprimer</a>
+</div>
+
+
+<h2>Ano. #3004</h2>
+
+<div class="issue tracker-1 status-1 priority-3 priority-high3 overdue details">
+    <div class="next-prev-links contextual">
+      « Précédent |
+        <span class="position">1 sur 23</span> |
+      <a href="/redmine/issues/3258" title="#3258">Suivant »</a>
+    </div>
+
+  <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/f0a1214d8276c8783929715c8b8925b9?rating=PG&amp;size=50&amp;default=wavatar" ssl="false" title="" />
+
+<div class="subject">
+<div><h3>Listings &gt; Mise en page </h3></div>
+</div>
+        <p class="author">
+        Ajouté par <a href="/redmine/users/72" class="user active">Samia  DHEMAIED</a> il y a <a href="/redmine/projects/recette/activity?from=2015-12-17" title="17/12/2015 19:15">5 mois</a>.
+        Mis à jour il y a <a href="/redmine/projects/recette/activity?from=2016-05-09" title="09/05/2016 18:33">16 jours</a>.
+        </p>
+
+<table class="attributes">
+<tr><th class="status">Statut:</th><td class="status">Nouveau</td><th class="start-date">Début:</th><td class="start-date">17/12/2015</td></tr><tr><th class="priority">Priorité:</th><td class="priority">Elevé</td><th class="due-date">Echéance:</th><td class="due-date">19/01/2016</td></tr><tr><th class="assigned-to">Assigné à:</th><td class="assigned-to"><img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/f0a1214d8276c8783929715c8b8925b9?rating=PG&amp;size=14&amp;default=wavatar" ssl="false" title="" /><a href="/redmine/users/72" class="user active">Samia  DHEMAIED</a></td><th class="progress">% réalisé:</th><td class="progress"><table class="progress" style="width: 80px;"><tr><td class="closed" style="width: 100%;"></td></tr></table><p class="percent">100%</p></td></tr><tr><th class="category">Catégorie:</th><td class="category">-</td><th class="estimated-hours">Temps estimé:</th><td class="estimated-hours">5.00 heures</td></tr><tr><th class="fixed-version">Version cible:</th><td class="fixed-version">M-Road - V1</td><th class="spent-time">Temps passé:</th><td class="spent-time"><a href="/redmine/projects/recette/issues/3004/time_entries">13.00 heures</a></td></tr>
+<tr>
+	<th>Date fin révisée:</th><td></td>
+	<th>Gpe facture:</th><td></td>
+</tr>
+<tr>
+	<th>Date fin réelle:</th><td></td>
+	<th>Entité:</th><td></td>
+</tr>
+<tr>
+	<th>Ref Safire:</th><td></td>
+	<th>Lot:</th><td></td>
+</tr>
+<tr>
+	<th>A facturer:</th><td>Non</td>
+</tr>
+
+
+</table>
+
+<hr />
+<div class="description">
+  <div class="contextual">
+  <a href="/redmine/issues/3004/quoted" class="icon icon-comment" data-method="post" data-remote="true" rel="nofollow">Citer</a>
+  </div>
+
+  <p><strong>Description</strong></p>
+  <div class="wiki">
+  <p>La mise en page des listings n'est pas adaptée. Il y a trop d'espaces entre les feuilles d'une même tournée</p>
+  </div>
+</div>
+<div class="attachments">
+<p><a href="/redmine/attachments/download/1982/picture726-1.png" class="icon icon-attachment">picture726-1.png</a>  
+  <span class="size">(91,746 ko)</span>
+    <a href="/redmine/attachments/1982" class="delete" data-confirm="Êtes-vous sûr ?" data-method="delete" rel="nofollow" title="Supprimer"><img alt="Delete" src="/redmine/images/delete.png?1367421395" /></a>
+    <span class="author">Samia  DHEMAIED, 17/12/2015 19:15</span>
+  </p>
+<p><a href="/redmine/attachments/download/2194/picture379-1.png" class="icon icon-attachment">picture379-1.png</a>  
+  <span class="size">(154,985 ko)</span>
+    <a href="/redmine/attachments/2194" class="delete" data-confirm="Êtes-vous sûr ?" data-method="delete" rel="nofollow" title="Supprimer"><img alt="Delete" src="/redmine/images/delete.png?1367421395" /></a>
+    <span class="author">Samia  DHEMAIED, 09/05/2016 18:33</span>
+  </p>
+  <div class="thumbnails">
+      <div><a href="/redmine/attachments/1982/picture726-1.png" title="picture726-1.png"><img alt="1982" src="/redmine/attachments/thumbnail/1982" /></a></div>
+      <div><a href="/redmine/attachments/2194/picture379-1.png" title="picture379-1.png"><img alt="2194" src="/redmine/attachments/thumbnail/2194" /></a></div>
+  </div>
+</div>
+
+
+
+<hr />
+<div id="issue_checklist">
+  <p><strong>Liste de Tâches</strong></p>
+  
+  <ul id="issue_checklist_items">
+    <li id="checklist_item_1495" class=is-done-checklist-item >
+  <input checked="checked" id="checklist_item" name="checklist_item" onclick="checklist_item_done(this,&#x27;/redmine/checklist/done/1495?is_done=false&#x27;,&#x27;1495&#x27;)" type="checkbox" value="1" />
+  Mise en forme de la page dans la géneration de la fichier PDF
+</li>
+
+  </ul>
+</div>
+
+
+
+
+<hr />
+<div id="issue_tree">
+<div class="contextual">
+  <a href="/redmine/projects/recette/issues/new?issue%5Bparent_issue_id%5D=3004&amp;issue%5Btracker_id%5D=1">Ajouter</a>
+</div>
+<p><strong>Sous-tâches</strong></p>
+
+</div>
+
+<hr />
+<div id="relations">
+<div class="contextual">
+  <a href="#" onclick="$(&#x27;#new-relation-form&#x27;).toggle(); $(&#x27;#relation_issue_to_id&#x27;).focus(); return false;">Ajouter</a>
+</div>
+
+<p><strong>Demandes liées</strong></p>
+
+
+<form accept-charset="UTF-8" action="/redmine/issues/3004/relations" class="new_relation" data-remote="true" id="new-relation-form" method="post" style="display: none;"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="FeTEAGQ+mdIbz+EHeOJr8LS9gHta+cwq5WeMoTiHdjA=" /></div>
+
+
+<p><select id="relation_relation_type" name="relation[relation_type]" onchange="setPredecessorFieldsVisibility();"><option value="relates">Lié à</option>
+<option value="duplicates">Duplique</option>
+<option value="duplicated">Dupliqué par</option>
+<option value="blocks">Bloque</option>
+<option value="blocked">Bloqué par</option>
+<option value="precedes">Précède</option>
+<option value="follows">Suit</option>
+<option value="copied_to">Copié vers</option>
+<option value="copied_from">Copié depuis</option></select>
+Demande #<input id="relation_issue_to_id" name="relation[issue_to_id]" size="10" type="text" />
+<span id="predecessor_fields" style="display:none;">
+Retard: <input id="relation_delay" name="relation[delay]" size="3" type="text" /> jours
+</span>
+<input name="commit" type="submit" value="Ajouter" />
+<a href="#" onclick="$(&quot;#new-relation-form&quot;).hide();; return false;">Annuler</a>
+</p>
+
+<script type="text/javascript">
+//<![CDATA[
+observeAutocompleteField('relation_issue_to_id', '/redmine/issues/auto_complete?project_id=recette&scope=all')
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+setPredecessorFieldsVisibility();
+//]]>
+</script>
+
+</form>
+</div>
+
+</div>
+
+
+<div id="history">
+<h3>Historique</h3>
+  <div id="change-11410" class="journal has-details">
+    <div id="note-1">
+    <h4><a href="/redmine/issues/3004#note-1" class="journal-link">#1</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/05f9237d90fb0f69f9960c5b916015b1?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/19" class="user active">Cyril Burnacci</a> il y a <a href="/redmine/projects/recette/activity?from=2016-01-14" title="14/01/2016 16:06">4 mois</a></h4>
+
+    <ul class="details">
+       <li><strong>Assigné à</strong> changé de <i>MROAD</i> à <i>TMA TMA</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-11457" class="journal has-details">
+    <div id="note-2">
+    <h4><a href="/redmine/issues/3004#note-2" class="journal-link">#2</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/8e637e5460c4e1965128259043b11d17?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/105" class="user active">TMA TMA</a> il y a <a href="/redmine/projects/recette/activity?from=2016-01-18" title="18/01/2016 12:33">4 mois</a></h4>
+
+    <ul class="details">
+       <li><strong>Tâche</strong> mis à <i>[ ] Mise en forme de la page dans la géneration de la fichier PDF</i></li>
+       <li><strong>Statut</strong> changé de <i>Nouveau</i> à <i>En cours</i></li>
+       <li><strong>Temps estimé</strong> mis à <i>5.00</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-11476" class="journal has-details">
+    <div id="note-3">
+    <h4><a href="/redmine/issues/3004#note-3" class="journal-link">#3</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/8e637e5460c4e1965128259043b11d17?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/105" class="user active">TMA TMA</a> il y a <a href="/redmine/projects/recette/activity?from=2016-01-19" title="19/01/2016 16:38">4 mois</a></h4>
+
+    <ul class="details">
+       <li><strong>Tâche</strong> changé de <i>[ ] Mise en forme de la page dans la géneration de la fichier PDF</i> à <i>[x] Mise en forme de la page dans la géneration de la fichier PDF</i></li>
+       <li><strong>Echéance</strong> mis à <i>19/01/2016</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-11496" class="journal has-details">
+    <div id="note-4">
+    <h4><a href="/redmine/issues/3004#note-4" class="journal-link">#4</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/8e637e5460c4e1965128259043b11d17?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/105" class="user active">TMA TMA</a> il y a <a href="/redmine/projects/recette/activity?from=2016-01-21" title="21/01/2016 10:09">4 mois</a></h4>
+
+    <ul class="details">
+       <li><strong>% réalisé</strong> changé de <i>0</i> à <i>100</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-11527" class="journal has-details">
+    <div id="note-5">
+    <h4><a href="/redmine/issues/3004#note-5" class="journal-link">#5</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/8e637e5460c4e1965128259043b11d17?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/105" class="user active">TMA TMA</a> il y a <a href="/redmine/projects/recette/activity?from=2016-01-25" title="25/01/2016 09:30">4 mois</a></h4>
+
+    <ul class="details">
+       <li><strong>Statut</strong> changé de <i>En cours</i> à <i>A recetter utilisateur</i></li>
+       <li><strong>Assigné à</strong> changé de <i>TMA TMA</i> à <i>Samia  DHEMAIED</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-11637" class="journal has-details">
+    <div id="note-6">
+    <h4><a href="/redmine/issues/3004#note-6" class="journal-link">#6</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/8e637e5460c4e1965128259043b11d17?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/105" class="user active">TMA TMA</a> il y a <a href="/redmine/projects/recette/activity?from=2016-01-29" title="29/01/2016 14:50">4 mois</a></h4>
+
+    <ul class="details">
+       <li><strong>Statut</strong> changé de <i>A recetter utilisateur</i> à <i>En cours</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-11638" class="journal has-details">
+    <div id="note-7">
+    <h4><a href="/redmine/issues/3004#note-7" class="journal-link">#7</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/8e637e5460c4e1965128259043b11d17?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/105" class="user active">TMA TMA</a> il y a <a href="/redmine/projects/recette/activity?from=2016-01-29" title="29/01/2016 14:50">4 mois</a></h4>
+
+    <ul class="details">
+       <li><strong>Tâche</strong> mis à <i>[ ] Mise en forme de la page dans la géneration de la fichier PDF</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-11660" class="journal has-details">
+    <div id="note-8">
+    <h4><a href="/redmine/issues/3004#note-8" class="journal-link">#8</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/8e637e5460c4e1965128259043b11d17?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/105" class="user active">TMA TMA</a> il y a <a href="/redmine/projects/recette/activity?from=2016-02-01" title="01/02/2016 16:23">4 mois</a></h4>
+
+    <ul class="details">
+       <li><strong>Tâche</strong> changé de <i>[ ] Mise en forme de la page dans la géneration de la fichier PDF</i> à <i>[x] Mise en forme de la page dans la géneration de la fichier PDF</i></li>
+       <li><strong>% réalisé</strong> changé de <i>0</i> à <i>100</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-11872" class="journal has-details">
+    <div id="note-9">
+    <h4><a href="/redmine/issues/3004#note-9" class="journal-link">#9</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/f0a1214d8276c8783929715c8b8925b9?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/72" class="user active">Samia  DHEMAIED</a> il y a <a href="/redmine/projects/recette/activity?from=2016-02-29" title="29/02/2016 15:48">3 mois</a></h4>
+
+    <ul class="details">
+       <li><strong>Assigné à</strong> changé de <i>Samia  DHEMAIED</i> à <i>MROAD</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-11888" class="journal has-details">
+    <div id="note-10">
+    <h4><a href="/redmine/issues/3004#note-10" class="journal-link">#10</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/18ac460f277baebd82073184768bc95e?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/102" class="user active">Tony Tia</a> il y a <a href="/redmine/projects/recette/activity?from=2016-03-01" title="01/03/2016 10:54">3 mois</a></h4>
+
+    <ul class="details">
+       <li><strong>Assigné à</strong> changé de <i>MROAD</i> à <i>TMA TMA</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-11901" class="journal has-details">
+    <div id="note-11">
+    <h4><a href="/redmine/issues/3004#note-11" class="journal-link">#11</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/8e637e5460c4e1965128259043b11d17?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/105" class="user active">TMA TMA</a> il y a <a href="/redmine/projects/recette/activity?from=2016-03-02" title="02/03/2016 16:31">3 mois</a></h4>
+
+    <ul class="details">
+       <li><strong>Statut</strong> changé de <i>En cours</i> à <i>A recetter utilisateur</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-12008" class="journal has-details">
+    <div id="note-12">
+    <h4><a href="/redmine/issues/3004#note-12" class="journal-link">#12</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/18ac460f277baebd82073184768bc95e?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/102" class="user active">Tony Tia</a> il y a <a href="/redmine/projects/recette/activity?from=2016-03-14" title="14/03/2016 12:25">2 mois</a></h4>
+
+    <ul class="details">
+       <li><strong>Assigné à</strong> changé de <i>TMA TMA</i> à <i>Samia  DHEMAIED</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-12014" class="journal has-details">
+    <div id="note-13">
+    <h4><a href="/redmine/issues/3004#note-13" class="journal-link">#13</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/f0a1214d8276c8783929715c8b8925b9?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/72" class="user active">Samia  DHEMAIED</a> il y a <a href="/redmine/projects/recette/activity?from=2016-03-14" title="14/03/2016 15:41">2 mois</a></h4>
+
+    <ul class="details">
+       <li><strong>Statut</strong> changé de <i>A recetter utilisateur</i> à <i>Recette OK</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-12612" class="journal has-notes">
+    <div id="note-14">
+    <h4><a href="/redmine/issues/3004#note-14" class="journal-link">#14</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/f879fa627c6333f0aad60fcacc0f7449?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/5" class="user active">claude rhault</a> il y a <a href="/redmine/projects/recette/activity?from=2016-04-21" title="21/04/2016 10:52">environ un mois</a></h4>
+
+    <div class="wiki editable" id="journal-12612-notes"><div class="contextual"><a href="/redmine/issues/3004/quoted?journal_id=12612" data-method="post" data-remote="true" rel="nofollow" title="Citer"><img alt="Comment" src="/redmine/images/comment.png?1367421395" /></a> <a href="#" onclick="$.ajax({url: &#x27;/redmine/journals/edit/12612.js&#x27;, type: &#x27;get&#x27;}); return false;" title="Modifier"><img alt="Edit" src="/redmine/images/edit.png?1367421395" /></a></div><p>Fiche validé  - Fermeture du dossier</p></div>
+    </div>
+  </div>
+  
+  <div id="change-12621" class="journal has-details">
+    <div id="note-15">
+    <h4><a href="/redmine/issues/3004#note-15" class="journal-link">#15</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/f879fa627c6333f0aad60fcacc0f7449?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/5" class="user active">claude rhault</a> il y a <a href="/redmine/projects/recette/activity?from=2016-04-21" title="21/04/2016 10:53">environ un mois</a></h4>
+
+    <ul class="details">
+       <li><strong>Statut</strong> changé de <i>Recette OK</i> à <i>Fermée</i></li>
+    </ul>
+    
+    </div>
+  </div>
+  
+  <div id="change-12851" class="journal has-notes has-details">
+    <div id="note-16">
+    <h4><a href="/redmine/issues/3004#note-16" class="journal-link">#16</a>
+    <img alt="" class="gravatar" default="wavatar" rating="PG" src="http://www.gravatar.com/avatar/f0a1214d8276c8783929715c8b8925b9?rating=PG&amp;size=24&amp;default=wavatar" ssl="false" title="" />
+    Mis à jour par <a href="/redmine/users/72" class="user active">Samia  DHEMAIED</a> il y a <a href="/redmine/projects/recette/activity?from=2016-05-09" title="09/05/2016 18:33">16 jours</a></h4>
+
+    <ul class="details">
+       <li><strong>Fichier</strong> <a href="/redmine/attachments/download/2194/picture379-1.png">picture379-1.png</a> ajouté</li>
+       <li><strong>Statut</strong> changé de <i>Fermée</i> à <i>Nouveau</i></li>
+       <li><strong>Priorité</strong> changé de <i>Normal</i> à <i>Elevé</i></li>
+    </ul>
+    <div class="wiki editable" id="journal-12851-notes"><div class="contextual"><a href="/redmine/issues/3004/quoted?journal_id=12851" data-method="post" data-remote="true" rel="nofollow" title="Citer"><img alt="Comment" src="/redmine/images/comment.png?1367421395" /></a> <a href="#" onclick="$.ajax({url: &#x27;/redmine/journals/edit/12851.js&#x27;, type: &#x27;get&#x27;}); return false;" title="Modifier"><img alt="Edit" src="/redmine/images/edit.png?1367421395" /></a></div><p>Bonjour, <br />J'ouvre à nouveau cette fiche car nous rencontrons encore des problèmes sur la mise en page. Voir PJ il n'y a pas d'adresse en début de page 4, celle-ci est restée sur la page 3.</p></div>
+    </div>
+  </div>
+  
+
+
+</div>
+
+
+<div style="clear: both;"></div>
+<div class="contextual">
+<a href="/redmine/issues/3004/edit" class="icon icon-edit" onclick="showAndScrollTo(&quot;update&quot;, &quot;issue_notes&quot;); return false;">Mettre à jour</a>
+<a href="/redmine/issues/3004/time_entries/new" class="icon icon-time-add">Saisir temps</a>
+<a href="/redmine/watchers/watch?object_id=3004&amp;object_type=issue" class="issue-3004-watcher icon icon-fav-off" data-method="post" data-remote="true" rel="nofollow">Surveiller</a>
+<a href="/redmine/projects/recette/issues/3004/copy" class="icon icon-copy">Copier</a>
+<a href="/redmine/issues/3004" class="icon icon-del" data-confirm="Êtes-vous sûr de vouloir supprimer la ou les demandes(s) selectionnée(s) ?" data-method="delete" rel="nofollow">Supprimer</a>
+</div>
+
+
+<div style="clear: both;"></div>
+  <div id="update" style="display:none;">
+  <h3>Mettre à jour</h3>
+  <form accept-charset="UTF-8" action="/redmine/issues/3004" class="edit_issue" enctype="multipart/form-data" id="issue-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="FeTEAGQ+mdIbz+EHeOJr8LS9gHta+cwq5WeMoTiHdjA=" /></div>
+    
+    
+    <div class="box">
+        <fieldset class="tabular"><legend>Changer les propriétés</legend>
+        <div id="all_attributes">
+        
+
+
+<p style="float:right; margin-right:1em;">
+  <input name="issue[is_private]" type="hidden" value="0" /><input id="issue_is_private" name="issue[is_private]" type="checkbox" value="1" /><label class="inline" for="issue_is_private" id="issue_is_private_label">Privée</label>
+</p>
+
+<p><label for="issue_project_id">Projet<span class="required"> *</span></label><select id="issue_project_id" name="issue[project_id]" onchange="updateIssueFrom(&#x27;/redmine/projects/recette/issues/update_form.js?id=3004&#x27;)"><option value="291">Evolution MROAD</option><option selected="selected" value="257">Recette</option><option value="304">&nbsp;&nbsp;&#187; Mise en Production</option><option value="10">PROSPER</option><option value="341">&nbsp;&nbsp;&#187; PROSPER MCO</option><option value="470">EDIFCO LOT 1</option></select></p>
+
+<p><label for="issue_tracker_id">Tracker<span class="required"> *</span></label><select id="issue_tracker_id" name="issue[tracker_id]" onchange="updateIssueFrom(&#x27;/redmine/projects/recette/issues/update_form.js?id=3004&#x27;)"><option value="1" selected="selected">Ano.</option>
+<option value="4">Evo.</option>
+<option value="6">Jalon</option></select></p>
+
+<p><label for="issue_subject">Sujet<span class="required"> *</span></label><input id="issue_subject" maxlength="255" name="issue[subject]" size="80" type="text" value="Listings &gt; Mise en page " /></p>
+
+<p>
+  <label for="issue_description">Description</label>
+  <a href="#" onclick="$(this).hide(); $(&quot;#issue_description_and_toolbar&quot;).show(); return false;"><img alt="Edit" src="/redmine/images/edit.png?1367421395" /></a>
+  <span id="issue_description_and_toolbar" style="display:none">
+    <textarea class="wiki-edit" cols="60" id="issue_description" name="issue[description]" rows="10">
+La mise en page des listings n&#x27;est pas adaptée. Il y a trop d&#x27;espaces entre les feuilles d&#x27;une même tournée </textarea>
+</span></p>
+<script type="text/javascript">
+//<![CDATA[
+var wikiToolbar = new jsToolBar(document.getElementById('issue_description')); wikiToolbar.setHelpLink('/redmine/help/wiki_syntax.html'); wikiToolbar.draw();
+//]]>
+</script>
+
+<div id="attributes" class="attributes">
+  
+
+<div class="splitcontent">
+<div class="splitcontentleft">
+<p><label for="issue_status_id">Statut<span class="required"> *</span></label><select id="issue_status_id" name="issue[status_id]" onchange="updateIssueFrom(&#x27;/redmine/projects/recette/issues/update_form.js?id=3004&#x27;)"><option value="1" selected="selected">Nouveau</option>
+<option value="9">A valider Direction</option>
+<option value="10">Validée Direction</option>
+<option value="2">En cours</option>
+<option value="3">A recetter DSI</option>
+<option value="7">A recetter utilisateur</option>
+<option value="4">Recette KO</option>
+<option value="8">Recette OK</option>
+<option value="5">Fermée</option>
+<option value="6">Rejetée</option></select></p>
+
+
+<p><label for="issue_priority_id">Priorité<span class="required"> *</span></label><select id="issue_priority_id" name="issue[priority_id]"><option value="1">Bas</option>
+<option value="2">Normal</option>
+<option value="3" selected="selected">Elevé</option>
+<option value="4">Urgent</option>
+<option value="5">Immediat</option></select></p>
+
+<p><label for="issue_assigned_to_id">Assigné à</label><select id="issue_assigned_to_id" name="issue[assigned_to_id]"><option value=""></option>
+<option value="105">&lt;&lt; moi &gt;&gt;</option><option value="74">Alexandre Artonne</option><option value="20">Andry Andrianiaina</option><option value="11">Anne Granet</option><option value="22">Christophe Duprat</option><option value="5">claude rhault</option><option value="19">Cyril Burnacci</option><option value="12">Erika Nam Hee</option><option value="13">Franck Verdiere</option><option value="64">Jeremy MAFFEIS</option><option value="71">Jerome Louis</option><option value="65">Kévin JEAN-BAPTISTE</option><option value="62">Marc-Antoine ADELISE</option><option value="42">Norma FEVAL</option><option value="15">Prestataire Everial Rennes</option><option value="67">Ramzi ABDELAZIZ</option><option value="72" selected="selected">Samia  DHEMAIED</option><option value="69">Sebastien Lainey</option><option value="59">Tidiane CAMARA</option><option value="105">TMA TMA</option><option value="102">Tony Tia</option><optgroup label="Groupes"><option value="70">MROAD</option><option value="73">RECETTE MROAD</option></optgroup></select></p>
+
+
+<p><label for="issue_fixed_version_id">Version cible</label><select id="issue_fixed_version_id" name="issue[fixed_version_id]"><option value=""></option>
+<option value="10" selected="selected">V1</option>
+<option value="39">M-ROAD V2</option></select>
+<a href="/redmine/projects/recette/versions/new" data-method="get" data-remote="true" tabindex="200" title="Nouvelle version"><img alt="Add" src="/redmine/images/add.png?1367421395" style="vertical-align: middle;" /></a>
+</p>
+</div>
+
+<div class="splitcontentright">
+<p id="parent_issue"><label for="issue_parent_issue_id">Tâche parente</label><input id="issue_parent_issue_id" name="issue[parent_issue_id]" size="10" type="text" /></p>
+<script type="text/javascript">
+//<![CDATA[
+observeAutocompleteField('issue_parent_issue_id', '/redmine/issues/auto_complete')
+//]]>
+</script>
+
+<p><label for="issue_start_date">Début</label><input id="issue_start_date" name="issue[start_date]" size="10" type="text" value="2015-12-17" /><script type="text/javascript">
+//<![CDATA[
+$(function() { $('#issue_start_date').datepicker(datepickerOptions); });
+//]]>
+</script></p>
+
+<p><label for="issue_due_date">Echéance</label><input id="issue_due_date" name="issue[due_date]" size="10" type="text" value="2016-01-19" /><script type="text/javascript">
+//<![CDATA[
+$(function() { $('#issue_due_date').datepicker(datepickerOptions); });
+//]]>
+</script></p>
+
+<p><label for="issue_estimated_hours">Temps estimé</label><input id="issue_estimated_hours" name="issue[estimated_hours]" size="3" type="text" value="5.0" /> Heures</p>
+
+<p><label for="issue_done_ratio">% réalisé</label><select id="issue_done_ratio" name="issue[done_ratio]"><option value="0">0 %</option>
+<option value="10">10 %</option>
+<option value="20">20 %</option>
+<option value="30">30 %</option>
+<option value="40">40 %</option>
+<option value="50">50 %</option>
+<option value="60">60 %</option>
+<option value="70">70 %</option>
+<option value="80">80 %</option>
+<option value="90">90 %</option>
+<option value="100" selected="selected">100 %</option></select></p>
+</div>
+</div>
+
+<div class="splitcontent">
+<div class="splitcontentleft">
+  <p><label for="issue_custom_field_values_1">Date fin révisée</label><input class="date_cf" id="issue_custom_field_values_1" name="issue[custom_field_values][1]" size="10" type="text" value="" /><script type="text/javascript">
+//<![CDATA[
+$(function() { $('#issue_custom_field_values_1').datepicker(datepickerOptions); });
+//]]>
+</script></p>
+  <p><label for="issue_custom_field_values_2">Date fin réelle</label><input class="date_cf" id="issue_custom_field_values_2" name="issue[custom_field_values][2]" size="10" type="text" value="" /><script type="text/javascript">
+//<![CDATA[
+$(function() { $('#issue_custom_field_values_2').datepicker(datepickerOptions); });
+//]]>
+</script></p>
+  <p><label for="issue_custom_field_values_4">Ref Safire</label><input class="int_cf" id="issue_custom_field_values_4" name="issue[custom_field_values][4]" type="text" value="" /></p>
+  <p><label for="issue_custom_field_values_7">A facturer</label><input id="issue_custom_field_values_7" name="issue[custom_field_values][7]" type="hidden" value="0" /><input class="bool_cf" id="issue_custom_field_values_7" name="issue[custom_field_values][7]" type="checkbox" value="1" /></p>
+</div><div class="splitcontentright">
+  <p><label for="issue_custom_field_values_8">Gpe facture</label><input class="string_cf" id="issue_custom_field_values_8" name="issue[custom_field_values][8]" type="text" value="" /></p>
+  <p><label for="issue_custom_field_values_9">Entité</label><select class="list_cf" id="issue_custom_field_values_9" name="issue[custom_field_values][9]"><option></option><option value="AME">AME</option>
+<option value="AMS">AMS</option>
+<option value="ASO">ASO</option>
+<option value="EQ">EQ</option>
+<option value="INTRA PRESSE">INTRA PRESSE</option>
+<option value="LP">LP</option>
+<option value="SDVP">SDVP</option>
+<option value="SIMGAM">SIMGAM</option></select></p>
+  <p><label for="issue_custom_field_values_16">Lot</label><select class="list_cf" id="issue_custom_field_values_16" name="issue[custom_field_values][16]"><option></option><option value="LOT 1">LOT 1</option>
+<option value="LOT 2">LOT 2</option>
+<option value="LOT 3">LOT 3</option>
+<option value="LOT 4">LOT 4</option></select></p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<div class="tabular">
+  <p id="issue_checklist_form">
+    <label>Liste de Tâches</label>
+    <span id="checklist_form_items"> </span> 
+ 		  <input id="add_checklist_item_input" name="new_checklist" type="text" value="" />   
+   		<a href="#" class="tag-add icon icon-add" id="add_checklist_item_button"></a>          
+
+    <script type="text/javascript">
+//<![CDATA[
+observeIssueChecklistField('checklist_form_items', 'add_checklist_item_input', 'add_checklist_item_button');
+//]]>
+</script>
+    <script type="text/javascript">
+//<![CDATA[
+createIssueChecklist([{"is_done":true,"subject":"Mise en forme de la page dans la géneration de la fichier PDF","id":1495}]);
+//]]>
+</script>
+  </p>
+</div>
+
+
+
+
+        </div>
+        </fieldset>
+        <fieldset class="tabular"><legend>Saisir temps</legend>
+        
+        <div class="splitcontentleft">
+        <p><label for="time_entry_hours">Temps passé</label><input id="time_entry_hours" name="time_entry[hours]" size="6" type="text" /> Heures</p>
+        </div>
+        <div class="splitcontentright">
+        <p><label for="time_entry_activity_id">Activité</label><select id="time_entry_activity_id" name="time_entry[activity_id]"><option value="">--- Choisir ---</option>
+<option value="8">Analyse</option>
+<option value="15">Conception</option>
+<option value="21">Planification</option>
+<option value="16">Rédaction</option>
+<option value="17">Réunion projet</option>
+<option value="18">Gestion projet</option>
+<option value="9">Développement</option>
+<option value="23">Paramétrage</option>
+<option value="19">Recette</option>
+<option value="20">Assistance utilisateur</option>
+<option value="24">Formation des utilisateurs</option>
+<option value="25">Form-Transfert connaissances</option>
+<option value="26">MCO</option></select></p>
+        </div>
+        <p><label for="time_entry_comments">Commentaire</label><input id="time_entry_comments" name="time_entry[comments]" size="60" type="text" /></p>
+    </fieldset>
+
+    <fieldset><legend>Notes</legend>
+    <textarea class="wiki-edit" cols="60" id="issue_notes" name="issue[notes]" rows="10">
+</textarea>
+    <script type="text/javascript">
+//<![CDATA[
+var wikiToolbar = new jsToolBar(document.getElementById('issue_notes')); wikiToolbar.setHelpLink('/redmine/help/wiki_syntax.html'); wikiToolbar.draw();
+//]]>
+</script>
+
+    <label for="issue_private_notes"><input name="issue[private_notes]" type="hidden" value="0" /><input id="issue_private_notes" name="issue[private_notes]" type="checkbox" value="1" /> Notes privées</label>
+
+    
+    </fieldset>
+
+    <fieldset><legend>Fichiers</legend>
+    <p><span id="attachments_fields">
+</span>
+<span class="add_attachment">
+<input class="file_selector" data-description-placeholder="Description facultative" data-max-concurrent-uploads="2" data-max-file-size-message="Ce fichier ne peut pas être attaché car il excède la taille maximale autorisée (5 Mo)" data-max-file-size="5242880" data-upload-path="/redmine/uploads.js" multiple="multiple" name="attachments[dummy][file]" onchange="addInputFiles(this);" type="file" />
+(Taille maximale: 5 Mo)
+</span>
+
+</p>
+    </fieldset>
+    </div>
+
+    <input id="issue_lock_version" name="issue[lock_version]" type="hidden" value="17" />
+    <input id="last_journal_id" name="last_journal_id" type="hidden" value="12851" />
+    <input name="commit" type="submit" value="Soumettre" />
+    <a accesskey="r" href="#" onclick="submitPreview(&quot;/redmine/issues/preview/edit/3004?project_id=recette&quot;, &quot;issue-form&quot;, &quot;preview&quot;); return false;">Prévisualisation</a>
+</form>
+<div id="preview" class="wiki"></div>
+
+  </div>
+
+<p class="other-formats">Formats disponibles :  <span><a href="/redmine/issues/3004.atom?key=180424969f3961362251dd48f0729934dc6673d2" class="atom" rel="nofollow">Atom</a></span>
+  <span><a href="/redmine/issues/3004.pdf" class="pdf" rel="nofollow">PDF</a></span>
+</p>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+contextMenuInit('/redmine/issues/context_menu')
+//]]>
+</script>
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Chargement...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+  </div></div>
+</div>
+</div>
+</div>
+
+<span id="cbp_images_form">
+  <span id="cbp_image_fields"></span>
+  <span class="add_attachment"><a class="add_attachment" href="#" onclick="cbImagePaste.showPasteDialog(); return false;; return false;">Ajouter une image à partir du presse-papier</a>
+  (Taille maximale: 5 Mo)</span>
+</span>
+
+<!-- input field span inspired by redmine/app/views/attachments/_form.html.erb -->
+<span id="cbp_image_field" style="display:none">
+  <span id="cbp_attach_thumbnail_box">
+    <img id="cbp_attach_thumbnail"/>
+  </span>
+  <input id="cbp_image_data" name="attachments[nnnnn][data]" type="hidden" value="" />
+  <input class="name" maxlength="50" name="attachments[nnnnn][name]" type="text" value="" />
+  <a href="#" id="cbp_link_btn" title="Copier image et lien sur miniature"><img alt="Link" src="/redmine/images/link.png?1367421395" /></a>
+  <input class="description" maxlength="255" name="attachments[nnnnn][description]" placeholder="Description facultative" type="text" value="" />
+  <a href="#" onclick="cbImagePaste.removeImageField(this); return false;" title="Supprimer"><img alt="Delete" src="/redmine/images/delete.png?1367421395" /></a>
+</span>
+
+<!-- clipboard paste dialog -->
+<div id="cbp_paste_dlg" title="Ajouter une image à partir du presse-papier" style="display:none">
+  <script type="text/javascript">
+    // translated labels go here (inside namespace)
+    (function(cbImagePaste, $, undefined) {
+      cbImagePaste.cbp_txt_crop_box        = "zone de rognage:  x={1}  y={2}  largeur={3}  hauteur={4}";
+      cbImagePaste.cbp_txt_print           = "Utilisez la touche Impression Ecran puis appuyez sur Ctrl+V.";
+      cbImagePaste.cbp_txt_select          = "Utilisez la souris pour sélectionner une partie spécifique de l\'image.";
+      cbImagePaste.cbp_txt_deselect        = "Cliquez en dehors de la zone pour déselectionner.";
+      cbImagePaste.cbp_txt_empty_cb        = "Le presse-papier est vide. Essayez de réappuyer sur la touche Impression Ecran.";
+      cbImagePaste.cbp_txt_no_image_cb     = "Aucune image trouvée dans le presse papier. Essayez à nouveau en appuyant sur la touche Impression Ecran.";
+      cbImagePaste.cbp_txt_no_image_pst    = "Aucune image n\'a été collée pour l\'instant. Commencez par en insérer une.";
+      cbImagePaste.cbp_txt_too_many_files  = "Impossible de joindre un nouveau fichier. Nombre maximum de fichiers autorisés dans une mise à jour limité à 10.";
+      cbImagePaste.cbp_txt_wrong_browser   = "Votre navigateur actuel ne peut pas coller d\'images. Veuillez utiliser Mozilla Firefox ver. >= 5 ou Google Chrome ver. >= 13.";
+      cbImagePaste.cbp_txt_btn_ok          = "Ok";
+      cbImagePaste.cbp_txt_btn_cancel      = "Annuler";
+      cbImagePaste.cbp_txt_too_big_image   = "Ce fichier ne peut pas être attaché car il excède la taille maximale autorisée (5 Mo)";
+      cbImagePaste.cbp_max_attach_size     = 5242880;
+      cbImagePaste.cbp_max_attachments     = 10;
+      cbImagePaste.cbp_min_chrome_ver      = 535;
+      cbImagePaste.cbp_min_firefox_ver     = 5;
+      cbImagePaste.cbp_act_update_id       = 855;
+    }(window.cbImagePaste = window.cbImagePaste || {}, j$cbp));
+  </script>
+
+  <div id="cbp_header_box">
+    <!-- canvas id="cbp_thumbnail" width="60" height="60"></canvas -->
+    <div id="cbp_instructions">&nbsp;</div>
+  </div>
+  <div id="cbp_panel_box">
+    <!-- place for pasted image editor -->
+  </div>
+</div>
+
+<!-- dialog to copy image link for wiki -->
+<div id="cbp_link_dlg" title="Copier image et lien sur miniature" style="display:none">
+  <input type="text" id="cbp_image_link" readonly />
+  <p/>
+  <input type="text" id="cbp_thumbnail_link" readonly />
+</div>
+
+</body>
+</html>
