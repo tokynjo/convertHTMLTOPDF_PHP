@@ -1,4 +1,12 @@
 function getIntervalle(datedebut,datefin) {
+    var weekday=new Array(7);
+    weekday[0]='Alahady';
+    weekday[1]='Lundi';
+    weekday[2]='Mardu';
+    weekday[3]='Mercredu';
+    weekday[4]='Jeudu';
+    weekday[5]='Vendredu';
+    weekday[6]='Samedu';
     var datDeb = datedebut;
     var datFin = datefin;
     var dtDeb = datDeb.split('/');
